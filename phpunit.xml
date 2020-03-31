@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Application Test Suite">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./app</directory>
+        </whitelist>
+    </filter>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="response_type" value="collection"/>
+        <env name="secret_id" value="AKID1lyqkuyly7H77yeVbrn74k6p0xqkwgjwe70d"/>
+        <env name="secret_key" value="2hMJKFGwjgcVJ818Wik7ldBx7Axr4G1yKl1mbHll"/>
+        <env name="base_uri" value="http://service-4jf0vqi4-1251517655.ap-guangzhou.apigateway.myqcloud.com/test/"/>
+    </php>
+</phpunit>

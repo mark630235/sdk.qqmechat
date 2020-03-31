@@ -1,0 +1,30 @@
+{
+    "name": "mark630235/sdk.qqmechat",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mark630235",
+            "email": "mark630235@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "freyo/qcloud-apigateway-http": "^1.0",
+        "illuminate/support": "^5.0"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "1.0.x-dev"
+    },
+    "autoload":{
+        "psr-4":{
+            "Qmechat\\ApiGateway\\Qmechat\\":"src/"
+        }
+    },
+    "autoload-dev":{
+        "psr-4":{
+            "Tests\\":"tests/"
+        }
+    }
+}
